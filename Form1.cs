@@ -15,8 +15,11 @@ namespace ReformatFilesApp {
             if(openfiledialog1.ShowDialog() == DialogResult.OK) {
                 oldFileNames = openfiledialog1.FileNames.ToArray(); //possible issue here, I initialize the array when the user clicks the button. what if they click it over and over again? garbage collection? 
                 newFileNames = new String[oldFileNames.Length];
-                PathTextbox.Text = oldFileNames[0];
-                PathTextbox.Text += oldFileNames[1];
+
+                PathTextbox.Text = oldFileNames[0].Substring(oldFileNames[0].LastIndexOf('\\') + 1);
+                for (int i = 1; i<oldFileNames.Length; i++) {
+                    PathTextbox.Text += "\n" + oldFileNames[i].Substring(oldFileNames[i].LastIndexOf('\\') + 1);
+                }
             }
         }
 
