@@ -1,4 +1,8 @@
 namespace ReformatFilesApp {
+
+    //BUGS
+    //File explorer opens twice??
+
     public partial class Form1 : Form {
         public Form1() {
             InitializeComponent();
@@ -13,7 +17,6 @@ namespace ReformatFilesApp {
 
 
         private void FileSelectButton_Click(object sender, EventArgs e) {
-            openfiledialog1.ShowDialog();
             if(openfiledialog1.ShowDialog() == DialogResult.OK) {
                 oldFileNames = openfiledialog1.FileNames.ToArray(); //possible issue here, I initialize the array when the user clicks the button. what if they click it over and over again? garbage collection? 
                 newFileNames = new String[oldFileNames.Length];
