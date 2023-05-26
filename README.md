@@ -2,7 +2,9 @@
 
 This simple app converts one or more file extension to lowercase. Test.TXT --> Test.txt
 
-https://user-images.githubusercontent.com/71737894/232159711-a8ec3f1a-5936-4ebf-a0a7-f5779a99c3c4.mp4
+
+https://github.com/AlexanderBerthon/ReformatFilesApp/assets/71737894/2a99d475-1cb5-4921-b852-817f554b17c2
+
 
 __________________________________________________________________
 
